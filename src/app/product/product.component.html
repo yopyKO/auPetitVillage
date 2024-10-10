@@ -1,0 +1,28 @@
+<div id="productPage">
+    <div id="selectButton">
+        <button (click)="nextProduct()">Voir une autre figurine</button>
+        <div id="selectButtonNum">
+            <button (click)="selectedProductId=1">Figurine 1</button>
+            <button (click)="selectedProductId=2">Figurine 2</button>
+            <button (click)="selectedProductId=3">Figurine 3</button>
+            <button (click)="selectedProductId=4">Figurine 4</button>
+            <button (click)="selectedProductId=5">Figurine 5</button>
+        </div>
+    </div>
+    <div *ngIf="selectedProductId" id="produit">
+        <div id="productDesc">
+            <h1>{{ selectedProduct.name }}</h1><br>
+            <div>
+                <h2>Description</h2>
+                <p>{{ selectedProduct.description }}</p>
+            </div>
+            <div>
+                <h2>Prix</h2>
+                <p>{{ selectedProduct.price }}€</p>
+            </div>
+            <p>Figurine #{{selectedProductId}}</p>
+        </div>
+        <img [src]="selectedProduct.imageUrl" [alt]="selectedProduct.imageAlt">
+    </div>
+
+</div>

@@ -1,0 +1,41 @@
+<main>
+    <div id="entreprise">
+      <h1>Présentation de l'entreprise</h1>
+      <div>
+        <article>
+        Notre entreprise fabrique des figurines à la main pour les passioné(e)s des avantures de nos chers amis les gaullois
+        </article>
+        <br>
+        <article>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus, metus id imperdiet aliquam, nunc nunc aliquet erat, sit amet vestibulum mi neque ac odio. Donec metus enim, gravida vel luctus ac, accumsan sed ante. In iaculis magna non molestie consequat. Quisque tincidunt volutpat mi vel finibus. Ut augue arcu, congue et arcu nec, rutrum ultrices nunc. Vivamus venenatis eget ante eget dignissim. Vestibulum imperdiet urna justo, a pellentesque nunc venenatis sed. In vulputate turpis est. Etiam pulvinar mauris eu odio vestibulum, vel gravida urna ultrices. Cras at tincidunt nibh, a sodales neque. Aenean nec fermentum lacus. Suspendisse et dolor convallis, semper felis non, mollis nisl. Ut posuere ex id odio placerat mattis. Aenean in rhoncus urna. Nam sed dignissim ante, id congue nisi. Phasellus sollicitudin accumsan ligula in sagittis. Donec libero elit, vestibulum vitae maximus nec, blandit eget quam. Sed vel venenatis nulla, non gravida eros. In vitae accumsan quam, non tincidunt turpis. Maecenas non blandit massa, nec mollis metus. Etiam in augue eget nunc mollis ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel magna purus.
+        </article>
+      </div>
+    </div>
+
+    <div id="catalogue">
+      <h1>Notre catalogue de figurines</h1>
+
+      <div id="sortBy">
+        <div>
+          <label for="search">Recherche par nom</label>
+          <input type="text" id="search" name="search" [(ngModel)]="searchTerm">
+        </div>
+        <button (click)="toggleSortOrder()">Inverser l'ordes pes prix</button>
+      </div>
+      
+      <ul id="listeProduit">
+        <li *ngFor="let product of products | filterByName: searchTerm | sortByPrice:'name':sortOrder ">
+          <div id="items" routerLink="product">
+            <h2>{{product.name}}</h2>
+            <p>#{{product.id}}</p>
+            <p>{{product.price}}€</p>
+            <img src="{{product.imageUrl}}" alt="{{product.imageAlt}}" height="100%" width="100%">
+           </div>
+        </li>
+      </ul>
+      
+    </div>
+</main>
+
+<router-outlet/>
+  

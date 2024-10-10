@@ -1,0 +1,22 @@
+footer{
+    background-color: #FDD90B;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+#socialLinks{
+    margin: 30px;
+}
+a{
+    margin: 30px;
+}
+a:hover{
+    opacity: 0.5;
+    transition: 0.3s
+}

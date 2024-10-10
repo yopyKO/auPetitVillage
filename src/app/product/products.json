@@ -1,0 +1,47 @@
+[
+{
+    "id": 1,
+    "name": "Figurine, Barbare",
+    "description": "Hauteur 90cm, arme et bouclier en option",
+    "price": "999,99",
+    "imageUrl": "/figBarbare90cm.jpeg",
+    "imageAlt":"figurine barbare 90cm",
+    "quantity": 1
+},
+{
+    "id": 2,
+    "name": "Astérix et Obélix",
+    "description": "Hauteur 30cm",
+    "price": "299,99",
+    "imageUrl": "/figAsterixObelix.jpeg",
+    "imageAlt":"figurine Astérix et Obélix 30cm",
+    "quantity": 1
+},
+{
+    "id": 3,
+    "name": "Astérix et Obélix",
+    "description": "Hauteur 25cm",
+    "price": "279,99",
+    "imageUrl": "/figAsterixObelixColored.jpeg",
+    "imageAlt":"figurine Astérix et Obélix 25cm",
+    "quantity": 1
+},
+{
+    "id": 4,
+    "name": "Obélix et Astérix",
+    "description": "Hauteur 25cm",
+    "price": "249,99",
+    "imageUrl": "figObelixAstrix.jpeg",
+    "imageAlt":"figurine Obélix et Astérix 25cm",
+    "quantity": 1
+},
+{
+    "id": 5,
+    "name": "Figurine sur socle",
+    "description": "Hauteur 20cm, Falbala, Astérix, Obélix",
+    "price": "349,99",
+    "imageUrl": "/figSocle3Perso.jpeg",
+    "imageAlt":"",
+    "quantity": 2
+}
+]

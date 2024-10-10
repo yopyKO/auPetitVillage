@@ -1,0 +1,49 @@
+#productPage{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 3em;
+    justify-content: space-evenly;
+}
+img{
+    max-width: 100%;
+}
+#produit{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+}
+#selectButton{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+#selectButtonNum{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+img{
+    max-height: 700px;
+}
+@media screen and (max-width: 990px){
+    #produit{
+        display: flex;
+        flex-direction: column;
+    }
+    #selectButton{
+        display: flex;
+        flex-direction: column;
+    }
+    #selectButton>*{
+        flex: 0 0 33.3333%;
+    }
+    #produit{
+        gap: 1em;
+    }
+}
